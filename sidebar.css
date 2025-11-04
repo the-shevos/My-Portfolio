@@ -315,9 +315,85 @@ address {
   border-radius: 10px;
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    padding: 1.2rem 2rem;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 320px;
+    padding: 1.2rem 1rem;
+    gap: 1rem;
+    border-radius: 22px;
+  }
+
+  .avatar-box {
+    width: 90px;
+    height: 90px;
+  }
+
+  .info-content {
+    margin-top: 0.3rem;
+  }
+
+  .name {
+    font-size: 1.1rem;
+  }
+
+  .title {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.8rem;
+  }
+
+  .separator {
+    margin: 0.3rem 0;
+  }
+
+  .contacts-list {
+    gap: 0.5rem;
+  }
+
+  .contact-item {
+    padding: 0.6rem 0.8rem;
+    gap: 0.6rem;
+    border-radius: 12px;
+  }
+
+  .icon-box {
+    min-width: 34px;
+    height: 34px;
+    font-size: 0.9rem;
+  }
+
+  .contact-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+
+  .contact-link,
+  time,
+  address {
+    font-size: 0.75rem;
+  }
+
+  .socials {
+    gap: 0.8rem;
+    margin-top: 0.6rem;
+    padding-top: 1rem;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+
+/* @media (max-width: 480px) {
   .sidebar {
     width: 100%;
     max-width: 400px;
   }
-}
+} */
