@@ -3,21 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio Sidebar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sidebar.css" />
   </head>
 
   <body>
-    <aside class="sidebar" data-sidebar>
+    <aside class="sidebar">
       <div class="sidebar-info">
         <figure class="avatar-box">
-          <img src="" alt="sachindu chirau" width="80" />
+          <img
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop"
+            alt="Sachindu Chirau"
+          />
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Sachindu Chirau</h1>
-          <p class="title">Software developer</p>
+          <h1 class="name">Sachindu Chirau</h1>
+          <p class="title">Software Developer</p>
         </div>
       </div>
+
+      <div class="separator"></div>
 
       <div class="sidebar-info_more">
         <ul class="contacts-list">
@@ -25,25 +35,30 @@
             <div class="icon-box">
               <i class="fa-solid fa-envelope"></i>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-              <a href="mailto:sachinduchirau7@gmail.com" class="contact-link"
-                >sachinduchirau7@gmail.com</a
-              >
+              <a href="mailto:sachinduchirau7@gmail.com" class="contact-link">
+                sachinduchirau7@gmail.com
+              </a>
             </div>
           </li>
 
           <li class="contact-item">
+            <div class="icon-box">
+              <i class="fa-solid fa-phone"></i>
+            </div>
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-              <a href="tel:+94753493015" class="contact-link"
-                >+94 75 349 3015</a
-              >
+              <a href="tel:+94753493015" class="contact-link">
+                +94 75 349 3015
+              </a>
             </div>
           </li>
 
           <li class="contact-item">
+            <div class="icon-box">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
               <time datetime="2006-05-26">May 26, 2006</time>
@@ -51,12 +66,29 @@
           </li>
 
           <li class="contact-item">
+            <div class="icon-box">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
             <div class="contact-info">
               <p class="contact-title">Location</p>
-              <address>118, Horana RD , Piliyandala, Colombo</address>
+              <address>118, Horana RD, Piliyandala, Colombo</address>
             </div>
           </li>
         </ul>
+
+        <!-- <div class="separator"></div> -->
+
+        <div class="socials">
+          <a href="#" class="social-link">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="social-link">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </div>
     </aside>
   </body>
