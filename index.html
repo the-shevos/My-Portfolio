@@ -13,83 +13,76 @@
 
   <body>
     <aside class="sidebar">
-      <div class="sidebar-info">
-        <figure class="avatar-box">
+      <div class="sidebar-header">
+        <figure class="avatar">
           <img
             src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&h=400&fit=crop"
-            alt="Sachindu Chirau"
+            alt="Richard Hamick"
           />
         </figure>
-
-        <div class="info-content">
-          <h1 class="name">Sachindu Chirau</h1>
-          <p class="title">Software Developer</p>
+        <div class="header-info">
+          <h2>Richard Hamick</h2>
+          <p>Web Developer</p>
         </div>
+        <button class="toggle-btn">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
       </div>
 
-      <div class="separator"></div>
-
-      <div class="sidebar-info_more">
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:sachinduchirau7@gmail.com" class="contact-link">
-                sachinduchirau7@gmail.com
-              </a>
+      <div class="sidebar-body">
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <p class="label">EMAIL</p>
+              <p class="value">richard@example.com</p>
             </div>
           </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-phone"></i>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+94753493015" class="contact-link">
-                +94 75 349 3015
-              </a>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <p class="label">PHONE</p>
+              <p class="value">+1 (213) 352-2795</p>
             </div>
           </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-cake-candles"></i>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="2006-05-26">May 26, 2006</time>
+          <li>
+            <i class="fa-solid fa-cake-candles"></i>
+            <div>
+              <p class="label">BIRTHDAY</p>
+              <p class="value">June 23, 1982</p>
             </div>
           </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>118, Horana RD, Piliyandala, Colombo</address>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <p class="label">LOCATION</p>
+              <p class="value">Sacramento, California, USA</p>
             </div>
           </li>
         </ul>
 
-        <!-- <div class="separator"></div> -->
-
         <div class="socials">
-          <a href="#" class="social-link">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="#" class="social-link">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="#" class="social-link">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="social-link"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </div>
       </div>
     </aside>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const sidebarBody = document.querySelector(".sidebar-body");
+
+      toggleBtn.addEventListener("click", () => {
+        sidebarBody.classList.toggle("show");
+        toggleBtn.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
