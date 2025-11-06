@@ -45,7 +45,7 @@ body::after {
     transparent 70%
   );
   border-radius: 50%;
-  bottom: -200px;
+  bottom: -50px;
   left: -200px;
   animation: float 10s ease-in-out infinite reverse;
 }

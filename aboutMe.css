@@ -245,3 +245,158 @@
     font-size: 0.95rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+  }
+
+  .sidebar {
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    border-radius: 25px;
+    padding: 2rem 1.5rem;
+    overflow: visible;
+  }
+
+  .about {
+    margin-left: 0;
+    width: 90%;
+    border-radius: 25px;
+    padding: 2rem 1.5rem;
+  }
+
+  .about-header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .header-divider {
+    margin: 0.5rem auto 1rem auto;
+  }
+
+  .about-text {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .about-details {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .info-box,
+  .skills-box {
+    flex: 1 1 100%;
+    padding: 1.3rem;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-footer::before,
+  .about-footer::after {
+    display: none;
+  }
+
+  .cv-btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* 📱 Mobile view — sidebar on top, about section below */
+@media (max-width: 767px) {
+  body {
+    flex-direction: column; /* Stack vertically */
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem 1rem;
+  }
+
+  .sidebar {
+    position: relative; /* Not fixed */
+    width: 100%; /* Full width on mobile */
+    height: auto;
+    margin-bottom: 1.5rem; /* Space below sidebar */
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    overflow: visible;
+  }
+
+  .about {
+    margin-left: 0; /* Remove side spacing */
+    width: 100%; /* Full width */
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .header-divider {
+    margin: 0.4rem auto 1rem auto;
+  }
+
+  .about-text {
+    flex-direction: column; /* Stack vertically */
+    gap: 1rem;
+  }
+
+  .divider {
+    display: none; /* Hide divider */
+  }
+
+  .left-text p,
+  .right-text p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .about-details {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .info-box,
+  .skills-box {
+    flex: 1 1 100%;
+    padding: 1.2rem;
+  }
+
+  .info-box h2,
+  .skills-box h2 {
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .cv-btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.85rem;
+  }
+
+  .about-footer {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1.8rem;
+  }
+
+  .about-footer::before,
+  .about-footer::after {
+    display: none;
+  }
+}
