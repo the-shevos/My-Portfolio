@@ -201,3 +201,32 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 767px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .project-card {
+    height: 180px;
+  }
+
+  .project-overlay {
+    padding: 0.5rem;
+  }
+
+  .project-overlay h3 {
+    font-size: 0.95rem;
+  }
+
+  .project-overlay p {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-overlay a {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.75rem;
+  }
+}
