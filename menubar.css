@@ -111,3 +111,23 @@
     padding: 0.45rem 0.9rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .tab-menu-wrapper {
+    position: fixed;
+    bottom: 15px; /* ↑ increased from 15px to 30px to move it down */
+    left: 50%;
+    transform: translateX(-50%); /* move down 10px */
+    top: auto;
+    right: auto;
+    width: max-content;
+    max-width: 90%;
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+  }
+}

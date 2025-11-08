@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="sidebar.css" />
     <link rel="stylesheet" href="aboutMe.css" />
     <link rel="stylesheet" href="menubar.css" />
+    <link rel="stylesheet" href="project.css" />
   </head>
 
   <body>
@@ -192,6 +193,91 @@
           </div>
         </div>
       </div>
+
+      <div class="tab-content projects-tab">
+        <div class="projects-container">
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="frontend">
+              Web Projects
+            </button>
+            <button class="filter-btn" data-filter="fullstack">
+              Full-Stack
+            </button>
+            <button class="filter-btn" data-filter="mini">Mini Projects</button>
+          </div>
+
+          <div class="project-grid">
+            <div class="project-card" data-category="frontend">
+              <img
+                src="https://images.unsplash.com/photo-1581091215367-59ab6c6439f8?w=600"
+                alt="Portfolio Website"
+              />
+              <div class="project-name">Portfolio Website</div>
+              <div class="project-overlay">
+                <p>
+                  A responsive personal portfolio built using HTML, CSS, and
+                  JavaScript.
+                </p>
+                <a href="#" target="_blank"
+                  ><i class="fa-solid fa-link"></i> View Project</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card" data-category="fullstack">
+              <img
+                src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?w=600"
+                alt="E-commerce Store"
+              />
+              <div class="project-name">E-Commerce Store</div>
+              <div class="project-overlay">
+                <p>
+                  Full-stack app built with React, Node.js, and MongoDB with
+                  user authentication.
+                </p>
+                <a href="#" target="_blank"
+                  ><i class="fa-solid fa-link"></i> View Project</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card" data-category="mini">
+              <img
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600"
+                alt="Weather App"
+              />
+              <div class="project-name">Weather App</div>
+              <div class="project-overlay">
+                <p>
+                  Small weather forecast app using OpenWeather API and vanilla
+                  JS.
+                </p>
+                <a href="#" target="_blank"
+                  ><i class="fa-solid fa-link"></i> View Project</a
+                >
+              </div>
+            </div>
+
+            <div class="project-card" data-category="fullstack">
+              <img
+                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600"
+                alt="Task Manager"
+              />
+              <div class="project-name">Task Manager</div>
+              <div class="project-overlay">
+                <p>
+                  Productivity app with authentication and real-time sync using
+                  Firebase.
+                </p>
+                <a href="#" target="_blank"
+                  ><i class="fa-solid fa-link"></i> View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script>
@@ -210,6 +296,10 @@
       const tabStyles = {
         about: {
           text: "About Me",
+          color: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
+        },
+        projects: {
+          text: "My Projects",
           color: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
         },
       };
