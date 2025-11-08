@@ -172,3 +172,32 @@
     font-size: 0.85rem;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .project-card {
+    height: 200px;
+  }
+
+  .project-overlay {
+    padding: 0.6rem;
+  }
+
+  .project-overlay h3 {
+    font-size: 1rem;
+  }
+
+  .project-overlay p {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .project-overlay a {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+}
