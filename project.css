@@ -143,3 +143,32 @@
     transform: translateY(0);
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+
+  .project-card {
+    height: 230px;
+  }
+
+  .project-overlay {
+    padding: 0.8rem;
+  }
+
+  .project-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-overlay p {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .project-overlay a {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}
