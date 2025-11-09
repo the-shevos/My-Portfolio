@@ -215,3 +215,30 @@
     width: 90%;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-body {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-form,
+  .contact-map {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .contact-form {
+    overflow: visible;
+    z-index: 2;
+  }
+
+  .contact-form .contact-socials {
+    top: 30px;
+    right: 20px;
+  }
+
+  .send-btn {
+    width: 100%;
+  }
+}
