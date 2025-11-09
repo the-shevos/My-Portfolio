@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="aboutMe.css" />
     <link rel="stylesheet" href="menubar.css" />
     <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
 
   <body>
@@ -88,7 +89,7 @@
             <div class="tab-menu">
               <button class="tab-btn active" data-tab="about">About</button>
               <button class="tab-btn" data-tab="projects">Projects</button>
-              <button class="tab-btn" data-tab="resume">Resume</button>
+              <button class="tab-btn" data-tab="contact">contact</button>
             </div>
           </div>
         </div>
@@ -278,6 +279,74 @@
           </div>
         </div>
       </div>
+
+      <div class="tab-content contact-tab">
+        <div class="contact-container">
+          <div class="contact-header">
+            <p class="contact-tagline">
+              Feel free to reach out. I’d love to hear from you!
+            </p>
+          </div>
+
+          <div class="contact-body">
+            <div class="contact-form">
+              <div class="contact-mini">
+                <p>
+                  <i class="fa-solid fa-calendar-check"></i> Available for
+                  freelance projects
+                </p>
+                <p><i class="fa-solid fa-clock"></i> Mon–Fri, 9am–6pm (PST)</p>
+                <p><i class="fa-solid fa-star"></i> 20+ Projects Completed</p>
+                <p><i class="fa-solid fa-rocket"></i> 5+ Years Experience</p>
+                <div class="contact-socials">
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+              </div>
+
+              <form id="contactForm">
+                <div class="form-group">
+                  <input type="text" id="name" required placeholder=" " />
+                  <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" required placeholder=" " />
+                  <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                  <textarea
+                    id="message"
+                    rows="6"
+                    required
+                    placeholder=" "
+                  ></textarea>
+                  <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="send-btn">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="contact-map">
+              <div class="map-overlay">
+                <h3>My Location</h3>
+                <p>Sacramento, CA</p>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019581010527!2d-121.4944!3d38.5816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085296b45e9e3f1%3A0x8f0f7c1a0d8e4a48!2sSacramento%2C%20CA!5e0!3m2!1sen!2sus!4v1690000000000!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script>
@@ -300,6 +369,10 @@
         },
         projects: {
           text: "My Projects",
+          color: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
+        },
+        contact: {
+          text: "contact me",
           color: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
         },
       };
