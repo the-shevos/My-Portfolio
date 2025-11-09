@@ -192,3 +192,26 @@
   border: none;
   border-radius: 25px;
 }
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .contact-body {
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .contact-form,
+  .contact-map {
+    flex: 1 1 48%;
+    min-height: 400px;
+  }
+
+  .contact-form .contact-socials {
+    top: 35px;
+    right: 25px;
+  }
+
+  .send-btn {
+    width: 90%;
+  }
+}
