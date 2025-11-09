@@ -242,3 +242,80 @@
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .contact-body {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .contact-form,
+  .contact-map {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .contact-form {
+    padding: 2rem 1.2rem;
+    border-radius: 20px;
+    overflow: visible;
+    z-index: 2;
+  }
+
+  .contact-header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .contact-tagline {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+
+  .contact-form .contact-socials {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+  }
+
+  .contact-form .contact-socials a {
+    font-size: 1.5rem;
+    color: #8b5cf6;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+
+  .contact-form .contact-socials a:hover {
+    transform: translateY(-3px);
+    color: #3b82f6;
+  }
+
+  .contact-mini p {
+    font-size: 0.9rem;
+  }
+
+  .send-btn {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-map {
+    border-radius: 20px;
+    min-height: 300px;
+  }
+
+  .contact-map .map-overlay {
+    top: 10px;
+    left: 10px;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .contact-map .map-overlay h3 {
+    font-size: 0.9rem;
+  }
+}
