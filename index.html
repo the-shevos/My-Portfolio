@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="menubar.css" />
     <link rel="stylesheet" href="project.css" />
     <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="fetuatuers.css" />
   </head>
 
   <body>
@@ -90,6 +91,7 @@
               <button class="tab-btn active" data-tab="about">About</button>
               <button class="tab-btn" data-tab="projects">Projects</button>
               <button class="tab-btn" data-tab="contact">contact</button>
+              <button class="tab-btn" data-tab="service">Service</button>
             </div>
           </div>
         </div>
@@ -347,6 +349,78 @@
           </div>
         </div>
       </div>
+
+      <div class="tab-content service-tab">
+        <section class="service-container">
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3>Modern Web Development</h3>
+              <p>
+                I create responsive, high-performance websites using the latest
+                technologies like React, Node.js, and Tailwind CSS.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-paintbrush"></i>
+              </div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Focused on user-friendly, aesthetic, and accessible interfaces
+                that enhance digital experiences.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h3>Backend Integration</h3>
+              <p>
+                Skilled at building secure, scalable APIs and connecting
+                frontend apps with robust backend systems.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <h3>Performance Optimization</h3>
+              <p>
+                I ensure smooth performance with optimized code, efficient
+                loading, and SEO best practices.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <h3>Security & Authentication</h3>
+              <p>
+                Implementing secure authentication flows, JWT, and encryption to
+                protect data and maintain trust.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+              </div>
+              <h3>Deployment & Cloud</h3>
+              <p>
+                Deploying modern web apps on Vercel, Netlify, and AWS with
+                continuous integration and scalability.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
     </section>
 
     <script>
@@ -373,6 +447,10 @@
         },
         contact: {
           text: "contact me",
+          color: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
+        },
+        service: {
+          text: "My Services",
           color: "linear-gradient(135deg, #8b5cf6, #3b82f6)",
         },
       };
