@@ -125,3 +125,33 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .certificate-card {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .certificate-card img {
+    height: 150px;
+  }
+
+  .certificate-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .certificate-card p {
+    font-size: 0.8rem;
+  }
+
+  .certificate-card a {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+
